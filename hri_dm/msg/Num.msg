@@ -1,0 +1,9 @@
+float64 x
+float64 y
+float64 z
+int64 num
+string name
+uint8 age
+uint32 score
+string sirname
+geometry_msgs/Vector3 location3d
