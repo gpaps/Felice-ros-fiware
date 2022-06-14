@@ -76,7 +76,7 @@ find_package(catkin REQUIRED COMPONENTS
  generate_messages(
    DEPENDENCIES
    std_msgs
-   geometry_msgs
+   geometry_msgs # Or other packages containing msgs
  )
 
 
@@ -112,7 +112,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
    CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
 #  INCLUDE_DIRS include
-#  LIBRARIES hri_dm
+   LIBRARIES hri_dm
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )

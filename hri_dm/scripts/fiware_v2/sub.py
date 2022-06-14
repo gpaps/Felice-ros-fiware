@@ -4,21 +4,17 @@ import requests
 # Input data acquisition
 CB_HEADER = {'Content-Type': 'application/json'}
 selection_port = '2620'
-selection_address = '25.22.193.22 '
+selection_address = '25.28.115.246'       # custom_hamachi IP
 selection_port_CB = '1026'
 selection_address_CB = '25.45.111.204'
 
-# "            \"idPattern\": \".*\",\n"\
-# 25.74.68.25 MIXALIS
-# 25.17.36.113 VAG
-
 # subscription
 msg = "{" \
-      "    \"description\": \"FORTH-Giorgos\",\n" \
+      "    \"description\": \"FORTH-RoboTest\",\n" \
       "    \"subject\": {\n" \
       "        \"entities\":\n" \
       "        [{\n" \
-      "            \"idPattern\": \"FHOOE.Orchestrator.*\",\n" \
+      "            \"idPattern\": \"forth.hri.*\",\n" \
       "            \"typePattern\": \".*\"\n" \
       "        }],\n" \
       "        \"conditions\": {\n" \
@@ -27,7 +23,7 @@ msg = "{" \
       "    },\n" \
       "    \"notification\": {\n" \
       "        \"http\": {\n" \
-      "            \"url\": \"http://25.22.193.22:2620/\",\n" \
+      "            \"url\": \"http://25.28.115.246:2620/\",\n" \        
       "            \"method\": \"POST\",\n" \
       "            \"headers\": {\n" \
       "                \"Content-Type\": \"application/json\"\n" \
